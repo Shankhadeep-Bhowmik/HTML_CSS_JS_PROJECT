@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 6%, 85%, 0.801);
+}
+
+.list-container{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 500px;
+  background-color: hsla(0, 3%, 63%, 0.39);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px hsla(0, 1%, 51%, 0.726);
+}
+
+#heading{
+  color: rgba(43, 42, 42, 0.808);
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.inputField{
+  display: flex;
+  gap: 3%;
+}
+
+#inputVal{
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  border: 1px solid rgb(151, 148, 148);
+  color: rgba(43, 42, 42, 0.808);
+}
+
+#btn{
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  background-color: rgb(7, 131, 233);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+#btn:hover{
+  background-color: rgb(62, 159, 238);
+}
+#btn:active{
+  background-color: rgb(152, 200, 240);
+}
+
+/* adding remaining classes */
+
+/* adding remaining classes */
+
+/* --------------------
+   LIST AND ITEM STYLES
+   -------------------- */
+
+#myUl {
+    /* Existing styles: */
+    /* border: 1px solid; */
+    padding: 5px;
+    width: 100%;
+    list-style-type: none; /* Removes the default bullet points */
+    
+    /* NEW: Add spacing between list items (the <li> elements) */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between each task */
+    border: none; /* Let's remove this visible border for a cleaner look */
+    overflow-y: scroll;
+}
+
+/* Style for each list item (the <li>) */
+#myUl li {
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* --------------------
+   TASK CONTAINER (THE DIV)
+   -------------------- */
+
+.task-container {
+    /* Existing styles: */
+    /* border: 1px solid red; */
+    display: flex;
+    
+    /* NEW: Arrangement to push the text to the left and buttons to the right */
+    justify-content: space-between; /* Pushes content to the edges */
+    align-items: center; /* Vertically centers content */
+    gap: 10px;
+    border: none; /* Remove the red border */
+}
+
+/* --------------------
+   TASK TEXT (THE SPAN)
+   -------------------- */
+
+.task-text {
+    flex-grow: 1; /* Allows the text to take up all available space */
+    font-size: 1.1rem;
+    color: #333;
+    padding-right: 15px; /* Adds space before the buttons start */
+    word-wrap: break-word; /* Prevents long words from breaking the layout */
+    max-width: 60%; /* Limits the text width so it doesn't push the buttons too far */
+}
+
+/* --------------------
+   COMPLETE TASK STYLE
+   -------------------- */
+
+/* This is the class your JS adds for the strike-through effect */
+.complete {
+    text-decoration: line-through; /* Adds the strike-through line */
+    color: #999; /* Fades the color to indicate completion */
+    transition: all 0.3s ease; /* Smooth transition for the effect */
+}
+
+/* --------------------
+   BUTTON STYLES
+   -------------------- */
+
+.complete-task,
+.delete-task {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.complete-task {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.complete-task:hover {
+    background-color: #45a047;
+}
+
+.delete-task {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.delete-task:hover {
+    background-color: #da190b;
+}
+
+/* Optional: Clean up the main container borders */
+
+
