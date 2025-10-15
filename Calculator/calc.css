@@ -1,0 +1,91 @@
+/* Styling calculator and easy words meaning in comments */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  /* this is background before calculator*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, purple 35%, blue);
+}
+.calc-container{
+  /* This is calculator container */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px; 
+  border-radius: 15px;
+  background-color: rgba(243, 241, 241, 0.26);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#output{
+  /* this is the output text area */
+  width: 100%;
+  height: 70px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.336);
+  border: none;
+}
+
+.buttons{
+  /* this is the buttons container */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+.btn{
+  /* this is the actual buttons */
+  padding: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(253, 251, 251, 0.329);
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: rgba(185, 182, 182, 0.973);
+  color: white;
+}
+.btn:active{
+  transform: scale(0.95);
+}
+.operation{
+  /* all arithmetic operation buttons */
+  background-color: orange;
+  color:white;
+}
+.operation:hover{
+  background-color: rgb(255, 102, 0);
+}
+.equals{
+  /* equal button */
+  background-color: rgb(3, 177, 3);
+  color: white;
+}
+.equals:hover{
+  background-color: rgb(12, 124, 12);
+}
+.clear{
+  /* clear button */
+  background-color: rgb(255, 52, 1);
+  color: white;
+  /* the clear button will long as 4 buttons */
+  grid-column: span 4;
+}
+.clear:hover{
+  background-color: rgb(223, 7, 7);
+}
