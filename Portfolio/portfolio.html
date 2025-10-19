@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="portfolio.css" rel="stylesheet" />
+    <title>Shankhadeep Bhowmik - Full Stack Developer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><span>SB</span>Shankhadeep's Portfolio</div>
+        <div class="right">
+          <ul>
+            <!-- How to add links to other sections -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="Resume-ShankhadeepB (1) (2) (1).pdf" target="_blank"
+                >Download CV</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--  -->
+      <section class="first-section" id="home">
+        <div class="left-section">
+          Hi, My name is <span class="purple">Shankhadeep</span>
+          <div>I am a <span id="element"></span></div>
+        </div>
+        <div class="right-section">
+          <img src="myPhoto.png" alt="my photo" />
+        </div>
+      </section>
+      <hr />
+      <section class="second-section" id="about">
+        <h1>About Myself</h1>
+        <div class="section-container">
+          <div class="sec-left">
+            <img src="aboutPhoto.jpg" />
+          </div>
+          <div class="sec-right">
+            <span id="element1"></span>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="third-section" id="services">
+        <h1>Services</h1>
+        <div class="services-container">
+          <div>
+            <h2>Web Development</h2>
+            <p>
+              I create responsive and dynamic websites using the latest web
+              technologies.
+            </p>
+          </div>
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>
+              I design user-friendly interfaces that provide an excellent user
+              experience.
+            </p>
+          </div>
+          <div>
+            <!-- Some other service -->
+            <h2>SEO Optimization</h2>
+            <p>
+              I optimize websites to improve their search engine rankings and
+              visibility.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="fourth-section" id="projects">
+        <h1>Projects</h1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="calculator.png" />
+            <div class="text">
+              <h3>Basic Calculator</h3>
+              <span class="description">
+                A simple calculator app built with HTML, CSS, and JavaScript. It
+                performs basic arithmetic operations like addition, subtraction,
+                multiplication, and division.
+              </span>
+              <a
+                href="https://github.com/Shankhadeep-Bhowmik/HTML_CSS_JS_PROJECT/tree/main/Calculator"
+                target="_blank"
+                >View Source Code</a
+              >
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="quote.png" />
+            <div class="text">
+              <h3>Quote Generator</h3>
+              <span class="description">
+                A random quote generator that fetches quotes from an API and
+                displays them with a button click. Built using HTML, CSS, and
+                JavaScript.
+              </span>
+              <a
+                href="https://github.com/Shankhadeep-Bhowmik/HTML_CSS_JS_PROJECT/tree/main/Quote_Generator"
+                target="_blank"
+                >View Source Code</a
+              >
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="todolist.png" />
+            <div class="text">
+              <h3>To-Do List</h3>
+              <span class="description">
+                A simple to-do list application that allows users to add,
+                delete, and mark tasks as completed. Built with HTML, CSS, and
+                JavaScript.
+              </span>
+              <a
+                href="https://github.com/Shankhadeep-Bhowmik/HTML_CSS_JS_PROJECT/tree/main/To_Do_List"
+                target="_blank"
+                >View Source Code</a
+              >
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="weather.png" />
+            <div class="text">
+              <h3>Weather App</h3>
+              <span class="description">
+                A weather application that fetches real-time weather data from
+                an API based on user input. Built using HTML, CSS, and
+                JavaScript.
+              </span>
+              <a
+                href="https://github.com/Shankhadeep-Bhowmik/HTML_CSS_JS_PROJECT/tree/main/Weather_App"
+                target="_blank"
+                >View Source Code</a
+              >
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+      <hr />
+      <section class="fifth-section" id="contact">
+        <h1>Contact Me</h1>
+        <!-- If I create form where data will be stored? -->
+        <form action="https://formbold.com/s/obkyk" method="POST" id="form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter full name"
+            id="inputName"
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter email"
+            id="inputEmail"
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message..."
+            required
+            id="inputMessage"
+          ></textarea>
+          <button type="submit">Submit</button>
+          <span style="color: rgb(235, 20, 20); margin-top: 1%"
+            >Please refresh for erasing data from input</span
+          >
+          <span
+            style="
+              color: rgb(235, 20, 20);
+              margin-top: 1%;
+              background-color: rgb(245, 245, 6);
+            "
+            >Owner has stop the form for now!</span
+          >
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="social-media">
+        <a
+          href="https://www.linkedin.com/in/shankhadeep-bhowmik"
+          target="_blank"
+          ><img
+            src="https://img.freepik.com/premium-vector/linkedin-logo-icon_1273375-1174.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="LinkedIn"
+        /></a>
+        <a href="https://github.com/Shankhadeep-Bhowmik" target="_blank"
+          ><img
+            src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+            alt="GitHub"
+        /></a>
+        <a href="https://x.com/ShankhadeepB06" target="_blank"
+          ><img
+            src="https://img.freepik.com/premium-vector/x-logo-icon_1273375-1173.jpg"
+            alt="Twitter"
+        /></a>
+      </div>
+      <span>&copy; 2025 Shankhadeep's rights reserved</span>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>

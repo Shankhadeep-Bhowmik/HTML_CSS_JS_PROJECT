@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: Poppins;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(1, 1, 22);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: orange;
+}
+
+#element {
+  color: rgb(189, 17, 189);
+}
+
+.left {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.left span {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px;
+}
+.first-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 80px 0;
+}
+.left-section {
+  margin: 30px 0;
+  font-size: 2rem;
+}
+.purple {
+  color: rgb(172, 6, 172);
+}
+/* .right-section{} */
+
+.right-section img {
+  border-radius: 50%;
+  width: 85%;
+  margin: 50px 0;
+  outline: 4px solid rgb(49, 49, 133);
+}
+.first-section > div {
+  width: 30%;
+}
+
+.second-section {
+  max-width: 80vw;
+  margin: auto;
+  height: 100vh;
+}
+
+main hr {
+  width: 80vw;
+  margin: auto;
+  border: 0;
+  background-color: #7465e5;
+  height: 1px;
+}
+.second-section h1 {
+  margin: 50px 0;
+  text-align: center;
+  text-decoration: underline rgb(49, 49, 133);
+  font-family: Poppins;
+}
+
+.second-section .section-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-container div {
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.section-container .sec-left img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  outline: 5px solid rgb(49, 49, 133);
+  box-shadow: 13px 10px 4px 2px #010314;
+}
+.section-container .sec-right {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.third-section {
+  max-width: 80vw;
+  margin: auto;
+  height: 100vh;
+}
+.third-section h1 {
+  margin: 50px 0;
+  text-align: center;
+  text-decoration: underline rgb(49, 49, 133);
+  font-family: Poppins;
+}
+.services-container {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-container div {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  outline: 4px solid rgb(49, 49, 133);
+  background-color: rgb(10, 10, 59);
+}
+.fourth-section {
+  max-width: 80vw;
+  margin: auto;
+  height: 100vh;
+}
+.fourth-section h1 {
+  margin: 50px 0;
+  text-align: center;
+  text-decoration: underline rgb(49, 49, 133);
+  font-family: Poppins;
+}
+.fourth-section .slideshow-container {
+  position: relative;
+  max-width: 70%;
+  height: 77vh;
+  margin: auto;
+  outline: 4px solid rgb(49, 49, 133);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.slideshow-container .mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.slideshow-container .mySlides img {
+  width: 100%;
+  height: 65%;
+  object-fit: contain;
+  border-radius: 10px;
+  object-position: center;
+}
+.mySlides .text {
+  color: white;
+  font-size: 0.2rem;
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 32%;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fifth-section {
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.fifth-section h1 {
+  text-align: center;
+  text-decoration: underline rgb(49, 49, 133);
+  font-family: Poppins;
+}
+.fifth-section form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  outline: 4px solid rgb(49, 49, 133);
+  padding: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f5efef33;
+}
+form input,
+form textarea {
+  margin-bottom: 10%;
+  border: none;
+}
+form input[type="text"],
+form input[type="email"] {
+  width: 268px;
+  height: 38px;
+  border-radius: 5px;
+  padding: 5px;
+}
+form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  height: 167px;
+  width: 272px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  font-size: 1.2rem;
+  font-family: Poppins;
+  width: 100%;
+}
+
+form button {
+  padding: 15px;
+  border: none;
+  background-color: rgb(13, 241, 5);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: rgb(2, 65, 5);
+}
+form button:hover {
+  background-color: rgb(2, 65, 5);
+  color: white;
+  transform: scale(0.93);
+}
+form button:active {
+  transform: scale(0.93);
+  background-color: #d3d0d0;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(1, 1, 22);
+  color: white;
+  margin-top: 40px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+.social-media a {
+  color: white;
+}
+.social-media a img {
+  border-radius: 10px;
+  height: 25px;
+}
+/* Responsive code starts here */
+/* Tablets screen width <= 1024px */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .first-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first-section > div {
+    width: 80%;
+  }
+
+  .right-section img {
+    width: 60%;
+    margin: 20px 0;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section-container div {
+    width: 80%;
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack service boxes */
+    gap: 25px; /* Add space between boxes */
+    height: auto; /* Let height adjust automatically */
+  }
+
+  .services-container div {
+    width: 80%; /* Each service box 80% wide */
+  }
+
+  .slideshow-container {
+    max-width: 80%; /* Make slideshow narrower */
+    height: auto; /* Let height resize automatically */
+  }
+
+  .fifth-section {
+    height: auto; /* Contact section auto height */
+  }
+}
+
+/* mobile phone screen width <= 600px */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column; /* Stack logo and links */
+    height: auto; /* Let height adjust */
+    padding: 15px 0; /* Add top-bottom padding */
+  }
+
+  nav ul {
+    flex-direction: column; /* Menu links one below another */
+    gap: 10px; /* Small space between each link */
+  }
+
+  .left {
+    font-size: 1.1rem; /* Make logo text smaller */
+    margin-bottom: 10px; /* Add some gap below it */
+  }
+
+  .first-section {
+    margin: 40px 0; /* Reduce top and bottom spacing */
+  }
+
+  .left-section {
+    font-size: 1.5rem; /* Slightly smaller text size */
+  }
+
+  .right-section img {
+    width: 70%; /* Shrink image for small screen */
+  }
+
+  .second-section,
+  .third-section,
+  .fourth-section,
+  .fifth-section {
+    max-width: 95vw; /* Use almost full phone width */
+    height: auto; /* Let height grow naturally */
+  }
+
+  .section-container div,
+  .services-container div {
+    width: 90%; /* Each box fills more of the screen */
+  }
+
+  .mySlides .text {
+    font-size: 0.9rem; /* Smaller project text */
+    height: auto; /* Adjust height automatically */
+  }
+
+  form {
+    width: 90%; /* Contact form fits screen */
+    padding: 15px; /* Add small padding inside form */
+  }
+
+  footer {
+    font-size: 0.9rem; /* Smaller footer text */
+  }
+}
